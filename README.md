@@ -103,7 +103,8 @@ password_strength_checker/
 
 ## Author
 - Jayakumar K
-- Github-link : https://github.com/password_strength_checker.git
+- Github-link : https://github.com/jayakumar-hacker/password_strength_checker/
+- 
 
 --- 
 
