@@ -45,6 +45,22 @@ password selection.
 
 ---
 
+## Why a Password is Weak
+
+This project not only checks password strength but also explains why a password is considered weak.  
+
+Currently, the password is flagged as weak for the following reasons:
+
+- Too short (less than 8 characters)
+- Contains only letters or only digits
+- Matches common patterns (like '12345', 'password')
+- Contains repeated sequences (like 'aaa' or '111')
+- Contains personal or common words (like names or common Tamil words)
+
+The program prints these reasons to help users improve their passwords.
+
+---
+
 ## Requirements
 
 - Python 3.8 or higher
