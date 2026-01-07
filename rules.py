@@ -30,13 +30,13 @@ def is_common_password(password,common_passwords):
 def check_length(password):
     length = len(password)
     if length < 8:
-        return 0,"Password must be atleast 8 characters."
+        return 0,"Password must be atleast 8 characters "
     elif length < 12:
-        return 10,"Password length is acceptable but not strong."
+        return 10,"Password length is acceptable but not strong (length less than 12)."
     elif length < 16:
         return 25,"Use atleast 16 characters for maximum protection."
     else:
-        return 40 
+        return 40,"Password has maximum protection (length > 16)."
 
 def check_charset(password):
     score = 0
@@ -63,7 +63,7 @@ def check_charset(password):
 def has_repetition(password):
     for i in range(len(password) - 2):
         if password[i] == password[i+1] == password[i+2]:
-            return f"Password has repeated characters [ {i}{i}{i} ] (-20)."
+            return f"Password has repeated characters [ {password[i]} (-20)."
     return False
 
 
